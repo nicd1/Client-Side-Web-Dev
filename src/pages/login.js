@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function HomePage() {
+export default function LoginPage() {
 	return (
         <div className="container">
             <h1>Home</h1>
             <p>
-                <Link to='/lists'>Link to lists</Link>
-                <br />
-                <Link to='/login'>Link to login</Link>
+                <Link to='/home'>Link to home</Link>
             </p>
         </div>
 	);
