@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { WrapperMain, ContentWrapper } from '../components/Wrapper/wrapper';
+import Header from './header';
 
 export default function LoginPage() {
 	return (
-        <div className="container">
-            <h1>Home</h1>
-            <p>
-                <Link to='/home'>Link to home</Link>
-            </p>
-        </div>
+        <WrapperMain>
+            {Header()}
+            <ContentWrapper>
+                
+            </ContentWrapper>
+            
+                <Link to='/'>Link to home</Link>
+            
+        </WrapperMain>
 	);
 }
