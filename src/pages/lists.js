@@ -1,6 +1,6 @@
 import React from 'react';
 import { WrapperMain } from '../components/Wrapper/wrapper';
-import Header from './header';
+import Header from '../components/SearchBar/header';
 
 export default function ListPage() {
 

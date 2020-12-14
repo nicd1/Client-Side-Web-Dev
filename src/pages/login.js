@@ -1,20 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { WrapperMain, ContentWrapper, ContainerWrapper } from '../components/Wrapper/wrapper';
-import Header from './header';
+import Header from '../components/SearchBar/header';
+import { CreateAccount, Login } from '../components/InputField/userAuth';
 
 export default function LoginPage() {
 	return (
         <WrapperMain>
             {Header()}
             <ContentWrapper>
-                <ContainerWrapper>
-                    test
+                <ContainerWrapper colSpan="2">
+                    <tr>
+                        <th>{CreateAccount()}</th>
+                        <th>{Login()}</th>
+                    </tr>
                 </ContainerWrapper>
             </ContentWrapper>
-            
-                {/* <Link to='/'>Link to home</Link> */}
-            
         </WrapperMain>
 	);
 }

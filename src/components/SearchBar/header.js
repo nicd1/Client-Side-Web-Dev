@@ -1,18 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SearchIcon from '../Icons/Search';
+import SearchIcon from '../../Icons/Search';
 import {
 	SearchBar,
 	SearchButton,
 	SearchForm,
-} from '../components/SearchBar/searchbar';
-import Button from '../components/Button/button';
+	LinkHeader,
+} from './searchbar';
+import Button from '../Button/button';
 
 export default function Header() {
 
 	return (
         <>
-		<h1>TechReads</h1>
+		<Link to="/"><LinkHeader>TechReads</LinkHeader></Link>
 			<SearchForm>
 				<SearchBar placeholder="Search by Title, Author or Genre..." />
 				<SearchButton>

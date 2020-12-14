@@ -5,7 +5,7 @@ import 'react-dropdown/style.css';
 import { WrapperMain, ContentWrapper } from '../components/Wrapper/wrapper';
 import { FilterWrapper } from '../components/Filter/filter';
 import { ContentGrid } from '../components/ContentGrid/content';
-import Header from './header';
+import Header from '../components/SearchBar/header';
 
 
 const options = [

@@ -24,13 +24,26 @@ const ContentWrapper = styled.div`
     justify-items: start;
 `;
 
-const ContainerWrapper = styled.div`
+const ContainerWrapper = styled.table`
 	margin: auto;
-	margin-top: 40px;
+	margin-left: 500px;
+	margin-top: 100px;
 	align-self: center;
-	border: 1px solid #e2e2e2;
 	width: 900px;
 	height: 300px;
+	text-align: center;
+	border-collapse: collapse;
+
+	th {
+		border: 1px solid #e2e2e2;
+		width: 50%;
+		font-size: 18px;
+	}
 `;
 
-export { WrapperMain, ContentWrapper, ContainerWrapper };
+const Subhead = styled.h3`
+	font-size: 18px;
+	text-align: center;
+`;
+
+export { WrapperMain, ContentWrapper, ContainerWrapper, Subhead };

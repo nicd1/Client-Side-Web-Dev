@@ -4,6 +4,12 @@ const SearchForm = styled.form`
 
 `;
 
+const LinkHeader = styled.h1`
+    cursor: pointer;
+    color: #242424;
+    text-decoration: none;
+`;
+
 const SearchBar = styled.input`
     font-size: 16px;
     padding: 10px;
@@ -53,4 +59,5 @@ export {
     SearchBar,
     SearchButton,
     SearchForm,
+    LinkHeader,
 }
