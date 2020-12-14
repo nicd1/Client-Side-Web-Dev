@@ -24,4 +24,13 @@ const ContentWrapper = styled.div`
     justify-items: start;
 `;
 
-export { WrapperMain, ContentWrapper };
+const ContainerWrapper = styled.div`
+	margin: auto;
+	margin-top: 40px;
+	align-self: center;
+	border: 1px solid #e2e2e2;
+	width: 900px;
+	height: 300px;
+`;
+
+export { WrapperMain, ContentWrapper, ContainerWrapper };

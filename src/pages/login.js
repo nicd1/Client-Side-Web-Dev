@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { WrapperMain, ContentWrapper } from '../components/Wrapper/wrapper';
+import { WrapperMain, ContentWrapper, ContainerWrapper } from '../components/Wrapper/wrapper';
 import Header from './header';
 
 export default function LoginPage() {
@@ -8,10 +8,12 @@ export default function LoginPage() {
         <WrapperMain>
             {Header()}
             <ContentWrapper>
-                
+                <ContainerWrapper>
+                    test
+                </ContainerWrapper>
             </ContentWrapper>
             
-                <Link to='/'>Link to home</Link>
+                {/* <Link to='/'>Link to home</Link> */}
             
         </WrapperMain>
 	);
