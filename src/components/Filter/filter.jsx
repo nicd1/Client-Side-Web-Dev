@@ -18,6 +18,4 @@ const FilterWrapper = styled.div`
     }
 `;
 
-export {
-    FilterWrapper,
-}
+export default FilterWrapper;
