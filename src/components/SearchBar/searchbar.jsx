@@ -5,7 +5,6 @@ const SearchForm = styled.form`
 `;
 
 const LinkHeader = styled.h1`
-    cursor: pointer;
     color: #242424;
     text-decoration: none;
 `;

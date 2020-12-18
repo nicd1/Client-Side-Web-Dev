@@ -12,6 +12,12 @@ const ContentGrid = styled.table`
     }
 `;
 
+const CheckBox = styled.input`
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+`;
 export {
-    ContentGrid
+    ContentGrid,
+    CheckBox,
 }
