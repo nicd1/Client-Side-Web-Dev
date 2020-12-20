@@ -6,7 +6,7 @@ import App from './App';
 
 render(
   <BrowserRouter>
-  <App />
+    <App />
   </BrowserRouter>,
   document.querySelector('#root')
 );

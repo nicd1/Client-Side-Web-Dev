@@ -1,7 +1,7 @@
 import React from 'react';
-import { InputField, UserForm } from './inputField';
+import { InputField, UserForm } from './InputField';
 import { Subhead } from '../Wrapper/wrapper';
-import HomePage from '../../pages/home';
+import HomePage from '../../pages/HomePage';
 
 function CreateAccount() {
 

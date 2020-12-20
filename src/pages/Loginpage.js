@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContainerWrapper } from '../components/Wrapper/wrapper';
 // import Header from './header';
-import { CreateAccount, Login } from '../components/InputField/userAuth';
+import { CreateAccount, Login } from '../components/InputField/UserAuth';
 
 export default function LoginPage() {
 	return (
