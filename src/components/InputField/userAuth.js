@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputField, UserForm } from './InputField';
 import { Subhead } from '../Wrapper/wrapper';
-import HomePage from '../../pages/HomePage';
+// import HomePage from '../../pages/HomePage';
 
 function CreateAccount() {
 
@@ -28,7 +28,7 @@ function Login() {
             <p>Username</p><InputField type='text' required />
             <p>Password</p><InputField type='password' required />
             <br />
-            <button onClick={HomePage()}>Log In</button>
+            <button>Log In</button>
         </UserForm>
             </>
 	);

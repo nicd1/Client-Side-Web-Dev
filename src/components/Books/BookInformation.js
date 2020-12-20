@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import {RowNavigation} from './content'; 
 import {FormatAuthors} from './BookItem';
 
-// const styleNoMargin = { margin: 0 }; // no-unused-vars
 const styleTable = { border: "1px solid #e2e2e2" };
-const styleComment = { color: "green" }
+
 
 let ElemTable = (props) =>
     <table> 
@@ -27,14 +26,21 @@ let InformationSplit = ({title, value}) =>
     </RowNavigation>;
 
 let BookAuthorsSplit = ({book}) => 
-    <InformationSplit title="Authors" value={FormatAuthors(book, ", ")} />
+    <InformationSplit title="" value={FormatAuthors(book, ", ")} />
 
 let RenderReview = (review, i) => 
     <div key={i}>
         <InformationSplit title={review.reviewer} value={review.review} />
     </div>;
 
-export default function BookInformation({app, book}) {
+let RenderRating = (rating, i) => 
+    <div key={i}>
+    <InformationSplit title={rating} />
+    </div>;
+
+
+
+export default function BookInformation({app, book, avg}) {
 	const [contentLoad, setContentLoad] = useState(true);
 
 	useEffect(() => {
@@ -52,7 +58,7 @@ export default function BookInformation({app, book}) {
                 <InformationSplit title="Description" value={book.description} />
             </ElemTable>
             <h4>Ratings</h4>
-            <p style={styleComment}>/ / TODO: Add the reviews</p> 
+            {book.ratings.map( RenderRating )}
             <h2>Reviews</h2>
             {book.reviews.map( RenderReview )}
         </div>
